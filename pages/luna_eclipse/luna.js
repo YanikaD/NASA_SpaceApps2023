@@ -1,5 +1,5 @@
 import './luna.css';
-import * as THREE from '../../three';
+import * as THREE from "../../three/build/three.module";
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 // import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import * as TWEEN from '../../tween.js';

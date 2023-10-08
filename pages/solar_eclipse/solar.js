@@ -1,5 +1,5 @@
 import "./solar.css";
-import * as THREE from "../../three";
+import * as THREE from "../../three/build/three.module";
 // import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as TWEEN from "../../tween.js";
 

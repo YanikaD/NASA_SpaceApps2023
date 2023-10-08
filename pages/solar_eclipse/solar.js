@@ -1,6 +1,6 @@
 import "./solar.css";
 import * as THREE from "https://unpkg.com/browse/three@0.150.1/";
-import { OrbitControls } from "/https://unpkg.com/browse/three@0.150.1/examples/jsm/controls/OrbitControls";
+import { OrbitControls } from "../../js/OrbitControls";
 import * as TWEEN from "https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.6.0/Tween.min.js";
 
 const scene = new THREE.Scene();

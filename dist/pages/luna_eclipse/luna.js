@@ -1,6 +1,6 @@
 import './luna.css';
 import * as THREE from "https://unpkg.com/browse/three@0.150.1/";
-import { OrbitControls } from "/https://unpkg.com/browse/three@0.150.1/examples/jsm/controls/OrbitControls";
+// import { OrbitControls } from "/https://unpkg.com/browse/three@0.150.1/examples/jsm/controls/OrbitControls";
 import * as TWEEN from "https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.6.0/Tween.min.js";
 
 const scene = new THREE.Scene();
@@ -118,20 +118,20 @@ scene.background = spaceTexture;
 // const axesHelper = new THREE.AxesHelper( 1000 );
 // scene.add( axesHelper );
 
-const controls = getControls()
+// const controls = getControls()
   
-function getControls() {
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.enableZoom = true;
-  return controls;
-}
+// function getControls() {
+//   const controls = new OrbitControls(camera, renderer.domElement);
+//   controls.enableDamping = true;
+//   controls.enableZoom = true;
+//   return controls;
+// }
 
 function animate() {
   // earth.rotation.y += 0.005;
   // sun.rotation.y+=0.0005;
   // torus.rotation.x+=0.01;
-  controls.update();
+  // controls.update();
   TWEEN.update();
   renderer.render(scene, camera);
   requestAnimationFrame(animate);

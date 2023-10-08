@@ -1,6 +1,6 @@
 import "./solar.css";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import * as TWEEN from "tween.js";
 
 const scene = new THREE.Scene();
@@ -20,13 +20,6 @@ function getCamera() {
   return camera;
 }
 
-function getTorus() {
-  const torusGeometry = new THREE.TorusGeometry(30, 3, 16, 100);
-  const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-  const torus = new THREE.Mesh(torusGeometry, material);
-  scene.add(torus);
-  return torus;
-}
 
 function getEarth(moon) {
   const earthTexture = new THREE.TextureLoader().load(
@@ -101,16 +94,16 @@ scene.background = spaceTexture;
 // const axesHelper = new THREE.AxesHelper(1000);
 // scene.add(axesHelper);
 
-const controls = getControls();
-function getControls() {
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-  controls.enableZoom = true;
-  return controls;
-}
+// const controls = getControls();
+// function getControls() {
+//   const controls = new OrbitControls(camera, renderer.domElement);
+//   controls.enableDamping = true;
+//   controls.enableZoom = true;
+//   return controls;
+// }
 
 function animate() {
-  controls.update();
+  // controls.update();
   TWEEN.update();
   renderer.render(scene, camera);
   requestAnimationFrame(animate);

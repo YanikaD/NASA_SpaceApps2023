@@ -1,7 +1,7 @@
 import './luna.css';
-import * as THREE from "../../node_modules/three";
+import * as THREE from "dist/three";
 // import { OrbitControls } from "../../js/OrbitControls";
-import * as TWEEN from "../../node_modules/tween.js";
+import * as TWEEN from "dist/tween.js";
 
 const scene = new THREE.Scene();
 

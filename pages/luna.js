@@ -34,7 +34,7 @@ function getTorus() {
 }
 
 function getEarth(moon) {
-  const earthTexture = new THREE.TextureLoader().load('../../Images/Large_World_Physical_Map.png');
+  const earthTexture = new THREE.TextureLoader().load('../Images/Large_World_Physical_Map.png');
   const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture }); // Use MeshBasicMaterial
   const earth = new THREE.Mesh(new THREE.SphereGeometry(10, 50, 50), earthMaterial);
   scene.add(earth);
@@ -60,7 +60,7 @@ function getEarth(moon) {
 }
 
 function getMoon() {
-  const moonTexture = new THREE.TextureLoader().load('../../Images/moon.jpg');
+  const moonTexture = new THREE.TextureLoader().load('../Images/moon.jpg');
   const moonMaterial = new THREE.MeshBasicMaterial({ map: moonTexture }); // Use MeshBasicMaterial
   const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 30, 30),
@@ -72,7 +72,7 @@ function getMoon() {
 }
 function getSun(earth) {
   const light = new THREE.PointLight(0xffffff);
-  const sunTexture = new THREE.TextureLoader().load('../../Images/sun.jpg');
+  const sunTexture = new THREE.TextureLoader().load('../Images/sun.jpg');
   const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture });
   const sun = new THREE.Mesh(new THREE.SphereGeometry(50, 50, 50), sunMaterial);
   light.castShadow = true;
@@ -109,7 +109,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 // renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-const spaceTexture = new THREE.TextureLoader().load("../../Images/space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("../Images/space.jpg");
 scene.background = spaceTexture;
 
 // const gridHelper = new THREE.GridHelper(1000, 100);

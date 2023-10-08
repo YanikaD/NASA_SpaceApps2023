@@ -68,31 +68,20 @@ button {
   width: 360px;
 }
 .content {
- 
- 
   justify-content: space-between;
   align-items: center;
- 
   background: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   height: 480px;
   width: 620px;
 }
 
-
-
 .content .text-content {
   width: 650px;
   height: 480px;
   padding: 20px 40px;
- 
- 
- 
- 
- 
   color: #ffffff;
 }
-
 
 
 .content .text .title {
@@ -104,13 +93,6 @@ button {
 .container .text p {
   text-align: justify;
 }
-
-
-
-
-
-
-
 
 canvas {
   position: fixed;

@@ -1,7 +1,7 @@
 import "./solar.css";
-import * as THREE from "https://unpkg.com/browse/three@0.150.1/";
+import * as THREE from "three";
 // import { OrbitControls } from "../../js/OrbitControls";
-import * as TWEEN from "https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.6.0/Tween.min.js";
+import * as TWEEN from "tween";
 
 const scene = new THREE.Scene();
 const camera = getCamera();

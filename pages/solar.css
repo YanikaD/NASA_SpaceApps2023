@@ -15,22 +15,11 @@ body {
  
 }
 
-button {
-  background-color: #00000000;
-  border: 0.2px solid #a74000;
-  border-radius: 10px;
-}
 .container {
   margin-top: -45px;
   width: 600px;
- 
   padding-top: 40px;
- 
- 
-  border-radius: 12px;
- 
- 
- 
+  border-radius: 12px; 
 }
 
 .container .topic {

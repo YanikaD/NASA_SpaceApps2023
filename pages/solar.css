@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"); */
+
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@ body {
   height: 100vh;
   max-width: 100vw;
   background: #494e57;
-  /* overflow: hidden; */
+ 
 }
 
 button {
@@ -25,14 +25,14 @@ button {
 .container {
   margin-top: -45px;
   width: 600px;
-  /* height: 500px; */
+ 
   padding-top: 40px;
-  /* margin-left: 0px; */
-  /* padding: 40px 40px; */
+ 
+ 
   border-radius: 12px;
-  /* background: rgba(0,0,0,.6); */
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
-  /* box-shadow: 0px 4px 8px rgba(254, 205, 211, 0.1), 0px 8px 8px rgba(254, 205, 211, 0.1), 0px 16px 7px rgba(254, 205, 211, 0.1); */
+ 
+ 
+ 
 }
 
 .container .topic {
@@ -68,41 +68,32 @@ button {
   width: 360px;
 }
 .content {
-  /* top: 5px; */
-  /* display: flex; */
+ 
+ 
   justify-content: space-between;
   align-items: center;
-  /* margin-left: 120px; */
+ 
   background: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   height: 480px;
   width: 620px;
 }
 
-/* 
-#home:checked ~ .list label.home,
-#blog:checked ~ .list label.blog,
-#help:checked ~ .list label.help,
-#code:checked ~ .list label.code,
-#about:checked ~ .list label.about {
-  color: #ffffff;
-} */
+
 
 .content .text-content {
   width: 650px;
   height: 480px;
   padding: 20px 40px;
-  /* margin: 0px 20px; */
-  /* margin-left: 100px; */
-  /* border-radius: 12px; */
-  /* background: rgba(61, 60, 60, 0.6); */
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+ 
+ 
+ 
+ 
+ 
   color: #ffffff;
 }
 
-/* .content .text {
-  display: none;
-} */
+
 
 .content .text .title {
   font-size: 24px;
@@ -113,29 +104,13 @@ button {
 .container .text p {
   text-align: justify;
 }
-/* 
-.content .text-content .home {
-  display: block;
-} */
 
-/* #home:checked ~ .text-content .home,
-#blog:checked ~ .text-content .blog,
-#help:checked ~ .text-content .help,
-#code:checked ~ .text-content .code,
-#about:checked ~ .text-content .about {
-  display: block;
-} */
 
-/* #blog:checked ~ .text-content .home,
-#help:checked ~ .text-content .home,
-#code:checked ~ .text-content .home,
-#about:checked ~ .text-content .home {
-  display: none;
-} */
 
-/* .content .list label:hover {
-  color: #0b3d91;
-} */
+
+
+
+
 
 canvas {
   position: fixed;
@@ -201,8 +176,8 @@ canvas {
 .moon_solar_total {
   width: 40px;
   height: 40px;
-  background-color: #ecaf2b; /* Color of the moon */
-  border-radius: 50%; /* Create a circular moon */
+  background-color: #ecaf2b;
+  border-radius: 50%;
   position: relative;
   box-shadow: 0 0 20px rgba(241, 123, 12, 0.75);
 }
@@ -212,23 +187,23 @@ canvas {
 
 .solar_total {
   width: 40px;
-  height: 40px; /* Make it taller to simulate the Earth's shadow */
-  background-color: #000; /* Color of the Earth's shadow */
+  height: 40px;
+  background-color: #000;
   border-radius: 50%;
   position: absolute;
-  /* bottom: 0; */
+ 
   left: 50%;
   transform: translateX(-50%);
-  /* animation: eclipse-animation 5s linear infinite alternate;  */
+ 
 }
 .moon_solar_total:hover {
   animation: solar_total_animate 1s linear infinite alternate;
-  /* Increase the shadow size on hover */
+ 
 }
 .type-card:hover .moon_solar_total,
 .tab4_align:hover .moon_solar_total {
   animation: solar_total_animate 1s linear infinite alternate;
-  /* Increase the shadow size on hover */
+ 
 }
 
 @keyframes solar_total_animate {
@@ -243,17 +218,17 @@ canvas {
 .moon_solar_partial {
   width: 40px;
   height: 40px;
-  background-color: rgb(241, 123, 12); /* Color of the moon */
-  border-radius: 50%; /* Create a circular moon */
+  background-color: rgb(241, 123, 12);
+  border-radius: 50%;
   position: relative;
   box-shadow: 0 0 20px rgba(255, 125, 3, 0.75);
-  /* top: 5px; */
+ 
 }
 
 .solar_partial {
   width: 40px;
-  height: 40px; /* Make it taller to simulate the Earth's shadow */
-  background-color: rgba(0, 0, 0, 95); /* Color of the Earth's shadow */
+  height: 40px;
+  background-color: rgba(0, 0, 0, 95);
   border-radius: 50%;
   position: absolute;
   top: -13px;
@@ -264,7 +239,7 @@ canvas {
 .type-card:hover .solar_partial,
 .tab4_align:hover .solar_partial {
   animation: solar_partial_animate 1s linear infinite alternate;
-  /* Increase the shadow size on hover */
+ 
 }
 
 @keyframes solar_partial_animate {
@@ -281,8 +256,8 @@ canvas {
 .moon_solar_annular {
   width: 40px;
   height: 40px;
-  background: radial-gradient(circle, #ff0000, #ffe400); /* Color of the moon */
-  border-radius: 50%; /* Create a circular moon */
+  background: radial-gradient(circle, #ff0000, #ffe400);
+  border-radius: 50%;
   position: relative;
   box-shadow: 0 0 20px rgba(255, 125, 3, 0.75);
   left: 15%;
@@ -290,19 +265,19 @@ canvas {
 
 .solar_annular {
   width: 36px;
-  height: 36px; /* Make it taller to simulate the Earth's shadow */
-  background-color: rgba(0, 0, 0, 0.95); /* Color of the Earth's shadow */
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.95);
   border-radius: 50%;
   position: absolute;
   top: 2px;
   left: 50%;
   transform: translateX(-50%);
-  animation: eclipse-animation 5s linear infinite alternate; /* Animation */
+  animation: eclipse-animation 5s linear infinite alternate;
 }
 .type-card:hover .solar_annular,
 .tab4_align:hover .solar_annular {
   animation: solar_annular_animate 1s linear infinite alternate;
-  /* Increase the shadow size on hover */
+ 
 }
 @keyframes solar_annular_animate {
   0% {
@@ -318,8 +293,8 @@ canvas {
 .moon_solar_hybrid {
   width: 40px;
   height: 40px;
-  background-color: rgb(241, 123, 12); /* Color of the moon */
-  border-radius: 50%; /* Create a circular moon */
+  background-color: rgb(241, 123, 12);
+  border-radius: 50%;
   position: relative;
   box-shadow: 5px 5px 20px rgba(241, 123, 12, 0.4);
   left: 10%;
@@ -327,8 +302,8 @@ canvas {
 
 .solar_hybrid {
   width: 38px;
-  height: 38px; /* Make it taller to simulate the Earth's shadow */
-  background-color: rgba(0, 0, 0, 0.95); /* Color of the Earth's shadow */
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.95);
   border-radius: 50%;
   position: absolute;
   bottom: -1px;
@@ -339,7 +314,7 @@ canvas {
 .type-card:hover .solar_hybrid,
 .tab4_align:hover .solar_hybrid {
   animation: solar_hybrid_animate 1s linear infinite alternate;
-  /* Increase the shadow size on hover */
+ 
 }
 @keyframes solar_hybrid_animate {
   0% {
@@ -355,7 +330,7 @@ canvas {
 .type-card:hover .moon_solar_hybrid,
 .tab4_align:hover .moon_solar_hybrid {
   animation: moon_solar_hybrid_animate 1s linear infinite alternate;
-  /* Increase the shadow size on hover */
+ 
 }
 @keyframes moon_solar_hybrid_animate {
   0% {
@@ -376,7 +351,7 @@ canvas {
   flex-wrap: wrap;
   margin-left: -300px;
   width: 650px;
-  /* overflow: hidden; */
+ 
 }
 .tabs [class^="tab"] label,
 .tabs [class*=" tab"] label {
@@ -432,21 +407,21 @@ canvas {
   transition: all 0.3s ease-in-out;
 }
 .tabs .tab-4 {
-  width: 25%; /* Set the width to 25% for 4 tabs */
+  width: 25%;
   height: 0px;
 }
 .tabs .tab-4 [type="radio"] + div {
-  width: 300%; /* Adjust the width for 4 tabs */
-  margin-left: 300%; /* Adjust the margin-left for 4 tabs */
+  width: 300%;
+  margin-left: 300%;
 }
 .tabs .tab-4 [type="radio"]:checked + div {
-  margin-left: 0; /* Adjust the margin-left for 4 tabs */
+  margin-left: 0;
 }
 .tabs .tab-4:last-child [type="radio"] + div {
-  margin-left: 200%; /* Adjust the margin-left for the last tab in 4 tabs */
+  margin-left: 200%;
 }
 .tabs .tab-4:last-child [type="radio"]:checked + div {
-  margin-left: -200%; /* Adjust the margin-left for the last tab in 4 tabs */
+  margin-left: -200%;
 }
 .tab4_align {
   display: flex;
@@ -457,10 +432,10 @@ canvas {
 .CSSgal {
   position: relative;
   overflow: hidden;
-  height: 430px; /* Or set a fixed height */
+  height: 430px;
 }
 
-/* SLIDER */
+
 
 .CSSgal .slider {
   height: 100%;
@@ -469,7 +444,7 @@ canvas {
   transition: 0.8s;
 }
 
-/* SLIDES */
+
 
 .CSSgal .slider > * {
   font-size: 1rem;
@@ -482,7 +457,7 @@ canvas {
   background-size: cover;
 }
 
-/* PREV/NEXT, CONTAINERS & ANCHORS */
+
 
 .CSSgal .prevNext {
   position: absolute;
@@ -493,7 +468,7 @@ canvas {
 }
 
 .CSSgal .prevNext > div + div {
-  visibility: hidden; /* Hide all but first P/N container */
+  visibility: hidden;
 }
 
 .CSSgal .prevNext a {
@@ -501,7 +476,7 @@ canvas {
   position: absolute;
   width: 60px;
   height: 60px;
-  line-height: 60px; /* If you want to place numbers */
+  line-height: 60px;
   text-align: center;
   opacity: 0.7;
   -webkit-transition: 0.3s;
@@ -518,19 +493,19 @@ canvas {
   right: 0;
 }
 
-/* NAVIGATION */
+
 
 .CSSgal .bullets {
   position: absolute;
   z-index: 2;
   bottom: 0;
-  /* padding: 10px 0; */
+ 
   width: 100%;
   text-align: center;
 }
 .CSSgal .bullets > a {
   display: inline-block;
-  /* width:       150px; */
+ 
   height: 30px;
   line-height: 30px;
   text-decoration: none;
@@ -540,18 +515,18 @@ canvas {
   transition: 0.3s;
 }
 .CSSgal .bullets > a + a {
-  background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+  background: rgba(255, 255, 255, 0.5);
 }
 .CSSgal .bullets > a:hover {
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* NAVIGATION BUTTONS */
-/* ALL: */
+
+
 .CSSgal > s:target ~ .bullets > * {
   background: rgba(255, 255, 255, 0.5);
 }
-/* ACTIVE */
+
 #s1_partial:target ~ .bullets > *:nth-child(1) {
   background: rgba(255, 255, 255, 1);
 }
@@ -564,12 +539,11 @@ canvas {
 #s4_partial:target ~ .bullets > *:nth-child(4) {
   background: rgba(255, 255, 255, 1);
 }
-/* More slides? Add here more rules */
 
-/* PREV/NEXT CONTAINERS VISIBILITY */
-/* ALL: */
-/* .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
-/* ACTIVE: */
+
+
+
+
 #s1_partial:target ~ .prevNext > *:nth-child(1) {
   visibility: visible;
 }
@@ -582,9 +556,9 @@ canvas {
 #s4_partial:target ~ .prevNext > *:nth-child(4) {
   visibility: visible;
 }
-/* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+
+
 
 #s1_partial:target ~ .slider {
   transform: translateX(0%);
@@ -602,7 +576,7 @@ canvas {
   transform: translateX(-300%);
   -webkit-transform: translateX(-300%);
 }
-/* More slides? Add here more rules */
+
 
 #s1_annular:target ~ .bullets > *:nth-child(1) {
   background: rgba(255, 255, 255, 1);
@@ -616,12 +590,11 @@ canvas {
 #s4_annular:target ~ .bullets > *:nth-child(4) {
   background: rgba(255, 255, 255, 1);
 }
-/* More slides? Add here more rules */
 
-/* PREV/NEXT CONTAINERS VISIBILITY */
-/* ALL: */
-/* .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
-/* ACTIVE: */
+
+
+
+
 #s1_annular:target ~ .prevNext > *:nth-child(1) {
   visibility: visible;
 }
@@ -634,9 +607,9 @@ canvas {
 #s4_annular:target ~ .prevNext > *:nth-child(4) {
   visibility: visible;
 }
-/* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+
+
 
 #s1_annular:target ~ .slider {
   transform: translateX(0%);
@@ -667,12 +640,11 @@ canvas {
 #s4_total:target ~ .bullets > *:nth-child(4) {
   background: rgba(255, 255, 255, 1);
 }
-/* More slides? Add here more rules */
 
-/* PREV/NEXT CONTAINERS VISIBILITY */
-/* ALL: */
-/* .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
-/* ACTIVE: */
+
+
+
+
 #s1_total:target ~ .prevNext > *:nth-child(1) {
   visibility: visible;
 }
@@ -685,9 +657,9 @@ canvas {
 #s4_total:target ~ .prevNext > *:nth-child(4) {
   visibility: visible;
 }
-/* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+
+
 
 #s1_total:target ~ .slider {
   transform: translateX(0%);
@@ -718,12 +690,11 @@ canvas {
 #s4_hybrid:target ~ .bullets > *:nth-child(4) {
   background: rgba(255, 255, 255, 1);
 }
-/* More slides? Add here more rules */
 
-/* PREV/NEXT CONTAINERS VISIBILITY */
-/* ALL: */
-/* .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
-/* ACTIVE: */
+
+
+
+
 #s1_hybrid:target ~ .prevNext > *:nth-child(1) {
   visibility: visible;
 }
@@ -736,9 +707,9 @@ canvas {
 #s4_hybrid:target ~ .prevNext > *:nth-child(4) {
   visibility: visible;
 }
-/* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+
+
 
 #s1_hybrid:target ~ .slider {
   transform: translateX(0%);
@@ -786,12 +757,12 @@ canvas {
 }
 
 .tips{
-  /* margin-top: -250px; */
+ 
   background-color: #ffffff;
   height: 100px;
   width: 500px;
-  /* position: relative; */
-  /* display: flex;1 */
+ 
+ 
   margin-left: 400px;
 }
 
@@ -829,6 +800,6 @@ button:hover {
   display: flex;
   justify-items: end;
   align-items: end;
-  /* margin-top: 270px; */
+ 
   margin-left: 520px;
 }

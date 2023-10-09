@@ -101,16 +101,16 @@ scene.background = spaceTexture;
 // const axesHelper = new THREE.AxesHelper(1000);
 // scene.add(axesHelper);
 
-// const controls = getControls();
-// function getControls() {
-//   const controls = new OrbitControls(camera, renderer.domElement);
-//   controls.enableDamping = true;
-//   controls.enableZoom = true;
-//   return controls;
-// }
+const controls = getControls();
+function getControls() {
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.enableZoom = true;
+  return controls;
+}
 
 function animate() {
-  // controls.update();
+  controls.update();
   TWEEN.update();
   renderer.render(scene, camera);
   requestAnimationFrame(animate);

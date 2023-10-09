@@ -1,7 +1,7 @@
-import "./solar.css";
-import * as THREE from "/build/three.module.js";
+// import "./solar.css";
+// import * as THREE from "/build/three.module.js";
 // import { OrbitControls } from "../../js/OrbitControls";
-import * as TWEEN from "/src/Tween.js";
+// import * as TWEEN from "/src/Tween.js";
 
 const scene = new THREE.Scene();
 const camera = getCamera();

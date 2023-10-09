@@ -1,6 +1,6 @@
 import * as THREE from "../three/build/three.module.js";
 import { OrbitControls } from "../three/examples/jsm/controls/OrbitControls.js";
-import * as TWEEN from "../tween.js/src/Tween.js";
+import * as TWEEN from "../@tweenjs/tween.js/dist/tween.esm.js";
 
 const scene = new THREE.Scene();
 
